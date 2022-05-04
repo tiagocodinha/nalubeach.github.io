@@ -21,6 +21,10 @@ ul {
     font-size: 120%
 }
 
+.menu-selector {
+    width: 50%;
+}
+
 .item-title {
     margin-left: 5%;
 }
