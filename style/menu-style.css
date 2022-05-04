@@ -1,0 +1,26 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #49c4d0;
+}
+
+.logo-image {
+    width: 25%;
+}
+
+.image-container {
+    text-align: center;
+    background-color: #49c4d0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.menu-filters li.active{
+    color: #C4A47F;
+    font-size: 120%
+}
+
+.item-title {
+    margin-left: 5%;
+}
