@@ -22,9 +22,13 @@ ul {
 }
 
 .menu-selector {
-    width: 50%;
+    width: 75%;
 }
 
 .item-title {
     margin-left: 5%;
+}
+
+.navbar {
+    background-color: #49c4d0;
 }
