@@ -17,6 +17,11 @@ body {
     background-size: cover;
 }
 
+a {
+    text-decoration: none;
+}
+
+
 .logo-image {
     width: 25%;
 }
@@ -41,6 +46,8 @@ ul {
 }
 
 .footer {
+    margin-bottom: 2%;
+
 }
 
 .row {
