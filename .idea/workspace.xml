@@ -31,7 +31,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
-  <component name="RunManager" selected="JavaScript Debug.menu.html">
+  <component name="RunManager" selected="JavaScript Debug.index.html">
     <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/nalubeach.github.io/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -40,8 +40,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JavaScript Debug.menu.html" />
         <item itemvalue="JavaScript Debug.index.html" />
+        <item itemvalue="JavaScript Debug.menu.html" />
       </list>
     </recent_temporary>
   </component>
@@ -54,7 +54,9 @@
       <option name="presentableId" value="Default" />
       <updated>1651489197999</updated>
       <workItem from="1651489199625" duration="13120000" />
-      <workItem from="1651664480804" duration="8358000" />
+      <workItem from="1651664480804" duration="10189000" />
+      <workItem from="1651835411260" duration="5331000" />
+      <workItem from="1652095080248" duration="4337000" />
     </task>
     <servers />
   </component>

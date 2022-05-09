@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
 }
@@ -7,11 +11,28 @@ h4 {
     color: #49c4d0;
 }
 
+.menu-button {
+    text-decoration: none;
+}
+
+.home-images {
+    width: 40%;
+}
+
 .capa {
     background-color: #49c4d0;
 }
 
 .footer {
-    background-color: #49c4d0;
+    background-color: #fff;
 }
 
+.row {
+    display: block;
+    justify-content: center;
+}
+
+.social-logos {
+    width: 50px;
+    height: 50px;
+}

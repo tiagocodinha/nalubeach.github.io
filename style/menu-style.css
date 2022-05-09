@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     color: #49c4d0;
@@ -35,4 +39,14 @@ ul {
 
 .footer {
     background-color: #49c4d0;
+}
+
+.row {
+    display: block;
+    justify-content: center;
+}
+
+.social-logos {
+    width: 50px;
+    height: 50px;
 }
