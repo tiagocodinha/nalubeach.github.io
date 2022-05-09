@@ -1,14 +1,23 @@
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
     font-family: 'Poppins', sans-serif;
+    background-image: url("../images/bkg.jpg");
+
+    /* Full height */
+    height: 100vh;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
 }
 
 h4 {
     font-size: 300%;
-    color: #49c4d0;
+    color: #fff;
 }
 
 .menu-button {
@@ -19,12 +28,7 @@ h4 {
     width: 40%;
 }
 
-.capa {
-    background-color: #49c4d0;
-}
-
 .footer {
-    background-color: #fff;
 }
 
 .row {

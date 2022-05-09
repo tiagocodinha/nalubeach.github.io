@@ -4,7 +4,17 @@ html {
 
 body {
     font-family: 'Poppins', sans-serif;
-    color: #49c4d0;
+    color: #fff;
+
+    background-image: url("../images/bkg.jpg");
+
+    /* Full height */
+    height: 100vh;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
 }
 
 .logo-image {
@@ -13,16 +23,10 @@ body {
 
 .image-container {
     text-align: center;
-    background-color: #49c4d0;
 }
 
 ul {
     list-style-type: none;
-}
-
-.menu-filters li.active{
-    color: #C4A47F;
-    font-size: 120%
 }
 
 .menu-selector {
@@ -34,11 +38,9 @@ ul {
 }
 
 .navbar {
-    background-color: #49c4d0;
 }
 
 .footer {
-    background-color: #49c4d0;
 }
 
 .row {
