@@ -20,12 +20,12 @@ a {
 }
 
 h4 {
-    font-size: 350%;
+    font-size: 250%;
     color: #fff;
 }
 
 .img-logo {
-    width: 75%;
+    width: 40%;
 }
 
 .menu-button {
@@ -47,6 +47,14 @@ h4 {
 }
 
 .social-logos {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
+}
+
+.s-logo-l {
+    margin-right: -5%;
+}
+
+.s-logo-r {
+    margin-left: -5%;
 }
