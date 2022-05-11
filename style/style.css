@@ -19,6 +19,11 @@ a {
     text-decoration: none;
 }
 
+h1 {
+    font-size: 100%;
+    color: white;
+}
+
 h4 {
     font-size: 250%;
     color: #fff;
@@ -29,7 +34,10 @@ h4 {
 }
 
 .menu-button {
+    transition: transform .2s; /* Animation */
+}
 
+.menu-button:hover {
 }
 
 .images-col {
@@ -55,6 +63,16 @@ h4 {
 .social-logos {
     width: 25px;
     height: 25px;
+    transition: transform .2s; /* Animation */
+
+}
+
+.social-logos:hover {
+  transform: scale(2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.social-logos:focus {
+    transform: scale(2);
 }
 
 .location {
@@ -68,8 +86,12 @@ h4 {
 
 .line {
 
-
 }
 
 .icons {
 }
+
+.copyright {
+    color: white;
+}
+
