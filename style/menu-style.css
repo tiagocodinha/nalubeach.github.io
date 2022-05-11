@@ -63,3 +63,8 @@ ul {
     width: 50px;
     height: 50px;
 }
+
+.copyright {
+    font-size: 80%;
+    color: white;
+}
