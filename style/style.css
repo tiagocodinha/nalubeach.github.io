@@ -4,15 +4,7 @@ html {
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-image: url("../images/bkg.jpg");
 
-    /* Full height */
-    height: 100vh;
-
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: repeat;
-    background-size: cover;
 }
 
 a {
@@ -20,13 +12,21 @@ a {
 }
 
 h1 {
-    font-size: 100%;
-    color: white;
+    color: #52c6d2;
+}
+
+h2 {
+    color: #52c6d2;
+    font-size: 1.2em;
+}
+
+h3 {
+    color: #52c6d2;
 }
 
 h4 {
-    font-size: 250%;
-    color: #fff;
+    color: #9f9f9f;
+    font-size: 0.8em;
 }
 
 .img-logo {
@@ -37,11 +37,8 @@ h4 {
     transition: transform .2s; /* Animation */
 }
 
-.menu-button:hover {
-}
-
-.images-col {
-
+.logo-container {
+    background-image: url("../images/bkg.jpg");
 }
 
 .text {
@@ -53,10 +50,11 @@ h4 {
 }
 
 .footer {
+    background-color: #f2f2f2;
     margin-bottom: 2%;
 }
 
-.row {
+.row-icons {
     display: block;
     justify-content: center;
 }
@@ -74,10 +72,6 @@ h4 {
 
 .social-logos:focus {
     transform: scale(2);
-}
-
-.location {
-
 }
 
 .img-footer {
