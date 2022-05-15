@@ -26,7 +26,7 @@ h3 {
 }
 
 h4 {
-    color: #9f9f9f;
+    color: #9f9f9f; !important;
     font-size: 0.6em;
 }
 
