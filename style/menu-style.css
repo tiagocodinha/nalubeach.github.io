@@ -39,7 +39,7 @@ ul {
     margin-left: 5%;
 }
 
-.navbar {
+.menu-image {
 }
 
 .footer {
@@ -60,4 +60,15 @@ ul {
 .copyright {
     font-size: 80%;
     color: white;
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop */
+    .menu-selector {
+        width: 50%;
+    }
+
+    .logo-image {
+        width: 15%;
+    }
 }
