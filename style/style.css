@@ -17,7 +17,7 @@ h1 {
 
 h2 {
     color: #52c6d2;
-    font-size: 1.2em;
+    font-size: 0.8em;
 }
 
 h3 {
@@ -26,7 +26,7 @@ h3 {
 
 h4 {
     color: #9f9f9f;
-    font-size: 0.8em;
+    font-size: 0.6em;
 }
 
 .images-container {
@@ -98,14 +98,22 @@ h4 {
     color: white;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
   /* For desktop */
     .home-images {
-        width: 25%;
+        width: 40%;
     }
 
     .img-logo {
-        width: 25%;
+        width: 20%;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    h4 {
+        font-size: 0.8em;
     }
 }
 
