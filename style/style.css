@@ -47,6 +47,11 @@ h4 {
     margin: auto;
 }
 
+.text-col {
+    text-align: center;
+    margin: auto;
+}
+
 .home-images {
     width: 40%;
 }
@@ -68,7 +73,7 @@ h4 {
 }
 
 .social-logos:hover {
-  transform: scale(2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transform: scale(1.5);
 }
 
 .social-logos:focus {
