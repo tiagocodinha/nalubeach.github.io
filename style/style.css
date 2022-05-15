@@ -38,7 +38,7 @@ h4 {
 }
 
 .logo-container {
-    background-image: url("../images/bkg.jpg");
+    background: linear-gradient(0deg, rgba(82,198,210,1) 0%, rgba(102,206,216,1) 100%);
 }
 
 .text {
