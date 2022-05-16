@@ -44,8 +44,8 @@ h4 {
 
 
 .btn-primary {
-    padding-right: 3%;
-    padding-left: 3%;
+    padding-right: 9%;
+    padding-left: 9%;
     background-color: #52c6d2;
     border-radius: 35px;
     border: none;
@@ -157,6 +157,12 @@ h4 {
 
     .home-images.right{
         margin-left: -2px;
+    }
+
+    .btn-primary {
+        padding-right: 4%;
+        padding-left: 4%;
+
     }
 }
 
