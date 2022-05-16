@@ -12,7 +12,6 @@ a {
 }
 
 h1 {
-    color: #52c6d2;
     display: inline;
 }
 
@@ -32,7 +31,7 @@ h4 {
 
 .images-container {
     padding: 0;
-    margin: 0;
+    margin-bottom: 20%;
 }
 
 .img-logo {
@@ -41,6 +40,21 @@ h4 {
 
 .home-images {
     width: 100%;
+}
+
+
+.btn-primary {
+    padding-right: 3%;
+    padding-left: 3%;
+    background-color: #52c6d2;
+    border-radius: 35px;
+    border: none;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: white;
+    color: #52c6d2;
 }
 
 .boxed {
@@ -119,6 +133,18 @@ h4 {
 
     h4 {
         font-size: 0.8em;
+    }
+
+    .images-container {
+        margin-bottom: 10%;
+    }
+
+    .home-images.left{
+        margin-right: -3px;
+    }
+
+    .home-images.right{
+        margin-left: -2px;
     }
 }
 
