@@ -150,6 +150,10 @@ hr.hr--logo:after {
   padding: 20px;
 }
 
+.livro {
+    width: 7em;
+}
+
 .copyright {
     font-size: 80%;
     color: white;
