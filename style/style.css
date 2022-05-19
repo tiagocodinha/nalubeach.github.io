@@ -29,7 +29,14 @@ h4 {
     font-size: 0.6em;
 }
 
+h5 {
+    font-size: 500%;
+    position: absolute;
+    top: 200px;
+}
+
 .images-container {
+    position: relative;
     padding: 0;
     margin-bottom: 20%;
 }
@@ -40,6 +47,19 @@ h4 {
 
 .home-images {
     width: 100%;
+    display: inline-block; /* Make the width of box same as image */
+
+}
+
+.home-images .text {
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 40%; /* Adjust this value to move the positioned div up and down */
+    text-align: center;
+    width: 60%; /* Set the width of the positioned div */
 }
 
 
@@ -101,8 +121,8 @@ h4 {
 
 
 .social-l {
-    width: 30px;
-    height: 30px;
+    width: 45px;
+    height: 45px;
     transition: transform .2s; /* Animation */
 
 }
@@ -132,7 +152,7 @@ h4 {
 @media only screen and (min-width: 992px) {
   /* For desktop */
     .home-images {
-        width: 40%;
+        width: 50%;
     }
 
     .img-logo {
