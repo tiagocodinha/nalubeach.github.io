@@ -131,17 +131,23 @@ h5 {
   transform: scale(1.5);
 }
 
-
 .img-footer {
     z-index: 1000;
     width: 15%;
 }
 
-.line {
-
+hr.hr--logo {
+  border-top: solid #000 1px;
+  margin: 50px 0;
 }
-
-.icons {
+hr.hr--logo:after {
+  content: url( '../images/logo-footer_ccexpress.png' );
+  /* Controls the position of the logo */
+  left: 50%;
+  position: absolute;
+  transform: translateY(-50%) translateX(-50%);
+  /* Controls the whitespace around the symbol */
+  padding: 20px;
 }
 
 .copyright {
