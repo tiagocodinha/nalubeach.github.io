@@ -31,7 +31,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
-  <component name="RunManager" selected="JavaScript Debug.index.html">
+  <component name="RunManager" selected="JavaScript Debug.vinhos.html">
     <configuration name="bar.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/nalubeach.github.io/pages/bar.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -41,8 +41,12 @@
     <configuration name="menu.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/nalubeach.github.io/pages/menu.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
+    <configuration name="vinhos.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/nalubeach.github.io/pages/vinhos.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.vinhos.html" />
         <item itemvalue="JavaScript Debug.index.html" />
         <item itemvalue="JavaScript Debug.menu.html" />
         <item itemvalue="JavaScript Debug.bar.html" />
@@ -66,7 +70,7 @@
       <workItem from="1652530899700" duration="1784000" />
       <workItem from="1652622568643" duration="24615000" />
       <workItem from="1652701980493" duration="2569000" />
-      <workItem from="1652918188771" duration="2769000" />
+      <workItem from="1652918188771" duration="2887000" />
     </task>
     <servers />
   </component>
