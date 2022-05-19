@@ -141,7 +141,7 @@ hr.hr--logo {
   margin: 50px 0;
 }
 hr.hr--logo:after {
-  content: url( '../images/logo-footer_ccexpress.png' );
+  content: url( '../images/logo-f.jpeg' );
   /* Controls the position of the logo */
   left: 50%;
   position: absolute;
