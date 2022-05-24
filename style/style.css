@@ -30,15 +30,28 @@ h4 {
 }
 
 h5 {
-    font-size: 500%;
+    font-size: 250%;
     position: absolute;
-    top: 200px;
+    color: #000;
 }
 
 .images-container {
     position: relative;
     padding: 0;
     margin-bottom: 20%;
+}
+
+.carousel-item {
+    position: relative;
+
+}
+
+.carousel-caption.right {
+    top: 7em;
+}
+
+.carousel-caption.left {
+    top: 25em;
 }
 
 .img-logo {
@@ -49,17 +62,6 @@ h5 {
     width: 100%;
     display: inline-block; /* Make the width of box same as image */
 
-}
-
-.home-images .text {
-    position: absolute;
-    z-index: 999;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
-    top: 40%; /* Adjust this value to move the positioned div up and down */
-    text-align: center;
-    width: 60%; /* Set the width of the positioned div */
 }
 
 
@@ -193,6 +195,19 @@ hr.hr--logo:after {
         padding-right: 4%;
         padding-left: 4%;
 
+    }
+
+    .carousel-caption.right {
+        top: 20em;
+        left: 80em;
+    }
+    
+    .carousel-caption.left {
+        top: 20em;
+    }
+
+    h5 {
+        font-size: 400%;
     }
 }
 
