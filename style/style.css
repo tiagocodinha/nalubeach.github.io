@@ -30,7 +30,7 @@ h4 {
 }
 
 h5 {
-    font-size: 250%;
+    font-size: 4vw;
     position: absolute;
     color: #000;
 }
@@ -59,7 +59,7 @@ h5 {
 }
 
 .home-images {
-    width: 0%;
+    width: 100%;
 }
 
 
@@ -153,10 +153,29 @@ hr.hr--logo:after {
     color: white;
 }
 
+.col {
+    padding: 0px;
+    position: relative;
+}
+.bottom-left {
+    position: absolute;
+    bottom: 18%;
+    left: 9%;
+  }
+
 @media only screen and (min-width: 992px) {
   /* For desktop */
+    .bottom-left {
+        position: absolute;
+        bottom: 18%;
+        left: 9%;
+    }
     .home-images {
-        width: 50%;
+        width: 100%;
+    }   
+    .col {
+        padding: 0px;
+        position: relative;
     }
 
     .img-logo {
@@ -196,6 +215,10 @@ hr.hr--logo:after {
     
     .carousel-caption.left {
         top: 20em;
+    }
+    
+    .carousel {
+        padding: 0px;
     }
 }
 
