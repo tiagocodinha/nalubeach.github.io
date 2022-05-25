@@ -32,7 +32,7 @@ h4 {
 h5 {
     font-size: 4vw;
     position: absolute;
-    color: #000;
+    color: #52c6d2;
 }
 
 .images-container {
@@ -161,6 +161,11 @@ hr.hr--logo:after {
     position: absolute;
     bottom: 18%;
     left: 9%;
+  }
+  .bottom-left-offset {
+    position: absolute;
+    bottom: 18.5%;
+    left: 9.5%;
   }
 
 @media only screen and (min-width: 992px) {
