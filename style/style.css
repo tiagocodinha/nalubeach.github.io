@@ -25,8 +25,8 @@ h3 {
 }
 
 h4 {
-    color: #9f9f9f; !important;
-    font-size: 0.6em;
+    color: #9f9f9f;
+    font-size: 0.5em;
 }
 
 h5 {
@@ -47,11 +47,11 @@ h5 {
 }
 
 .carousel-caption.right {
-    top: 7em;
+    text-align: center;
 }
 
 .carousel-caption.left {
-    top: 25em;
+    text-align: center;
 }
 
 .img-logo {
@@ -59,9 +59,7 @@ h5 {
 }
 
 .home-images {
-    width: 100%;
-    display: inline-block; /* Make the width of box same as image */
-
+    width: 0%;
 }
 
 
@@ -77,12 +75,6 @@ h5 {
 .btn-primary:hover {
     background-color: white;
     color: #52c6d2;
-}
-
-.boxed {
-    border: 3px solid #52c6d2 ;
-    display: inline-block;
-    border-radius: 10px;
 }
 
 .menu-button {
@@ -204,10 +196,6 @@ hr.hr--logo:after {
     
     .carousel-caption.left {
         top: 20em;
-    }
-
-    h5 {
-        font-size: 400%;
     }
 }
 
