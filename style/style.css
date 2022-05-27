@@ -111,18 +111,14 @@ h5 {
 }
 
 .social-l {
-    width: 45px;
-    height: 45px;
+    width: 30px;
+    height: 30px;
     transition: transform .2s; /* Animation */
+
 }
 
 .social-l:hover {
   transform: scale(1.5);
-}
-
-.img-footer {
-    z-index: 1000;
-    width: 15%;
 }
 
 hr.hr--logo {
