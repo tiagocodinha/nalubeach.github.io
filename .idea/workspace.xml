@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="02fded69-3843-4959-b74a-03d8556982ed" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +33,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.web.browsers" />
   </component>
   <component name="RunManager" selected="JavaScript Debug.index.html">
     <configuration name="bar.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/nalubeach.github.io/pages/bar.html" useBuiltInWebServerPort="true">
@@ -76,6 +78,7 @@
       <workItem from="1652955955608" duration="1711000" />
       <workItem from="1653403267424" duration="2000" />
       <workItem from="1653841283801" duration="596000" />
+      <workItem from="1653843404488" duration="276000" />
     </task>
     <servers />
   </component>
