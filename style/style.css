@@ -121,17 +121,18 @@ h5 {
   transform: scale(1.5);
 }
 
-hr {
-    
+.img-svg {
+    width: 10%;
 }
 
 hr.hr--logo {
   border-top: solid #000 1px;
   margin: 50px 0;
 }
+
 hr.hr--logo:after {
-  content: url( '../images/logo-f.jpeg' );
-  /* Controls the position of the logo */
+    content: url("../images/logo-f.jpeg");
+    /* Controls the position of the logo */
   left: 50%;
   position: absolute;
   transform: translateY(-50%) translateX(-50%);
