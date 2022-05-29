@@ -131,7 +131,7 @@ hr.hr--logo {
 }
 
 hr.hr--logo:after {
-    content: url("../images/logo-f.jpeg");
+    content: url("../images/logo\ footer-final-acho4-01.jpg");
     /* Controls the position of the logo */
   left: 50%;
   position: absolute;
