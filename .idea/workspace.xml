@@ -40,7 +40,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Documents/Project/social" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.web.browsers" />
   </component>
@@ -86,10 +86,14 @@
       <workItem from="1652918188771" duration="9600000" />
       <workItem from="1652955955608" duration="1711000" />
       <workItem from="1653403267424" duration="2000" />
+<<<<<<< Updated upstream
       <workItem from="1653841283801" duration="596000" />
       <workItem from="1653843404488" duration="276000" />
       <workItem from="1654344312698" duration="1210000" />
       <workItem from="1654447365527" duration="603000" />
+=======
+      <workItem from="1654031946927" duration="29000" />
+>>>>>>> Stashed changes
     </task>
     <servers />
   </component>
