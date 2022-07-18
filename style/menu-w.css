@@ -10,6 +10,10 @@ body {
 
 }
 
+.price-text {
+    font-size: 150%;
+}
+
 a {
     text-decoration: none;
 }
