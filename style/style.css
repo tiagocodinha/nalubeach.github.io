@@ -35,13 +35,16 @@ body {
 }
 
 .navbar-brand {
-    width: 25%;
+    width: 35%;
+}
 
+.navbar-nav .nav-item .nav-link{
+    color: white;
 }
 
 .button-container {
     position: absolute;
-    bottom: 55%;
+    bottom: 60%;
     left: 50%;
     transform: translate(-50%, 50%);
 }
@@ -242,6 +245,17 @@ hr.hr--logo:after {
 
 @media only screen and (min-width: 992px) {
   /* For desktop */
+
+    .button-container {
+        position: absolute;
+        bottom: 55%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+    }
+
+    .navbar-brand {
+        width: 25%;
+    }
     .bottom-left {
         position: absolute;
         bottom: 18%;
