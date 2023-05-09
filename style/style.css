@@ -30,7 +30,7 @@ body {
 }
 
 .button-container {
-    position: relative;
+    position: absolute;
     bottom: 55%;
     left: 50%;
     transform: translate(-50%, 50%);
@@ -44,16 +44,15 @@ body {
 .arrow-container {
     position: relative;
     height: 50px; /* set the height of the container to the height you want the arrow to move */
-
 }
 
 .arrow {
-    position: absolute;
-    top: 50%;
+    position: relative;
+    top: -25%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 50%;
-    height: 50%;
+    width: 50px;
+    height: 50px;
     animation: arrow-animation 2s infinite;
 }
 
@@ -266,6 +265,10 @@ hr.hr--logo:after {
         padding-right: 4%;
         padding-left: 4%;
 
+    }
+
+    .arrow {
+        top: -70%;
     }
 
     .carousel {
