@@ -42,6 +42,10 @@ body {
     color: white;
 }
 
+.navbar-light .navbar-toggler {
+    outline: none;
+}
+
 .button-container {
     position: absolute;
     bottom: 60%;
@@ -79,6 +83,15 @@ body {
     100% {
       transform: translate(-50%, -50%) translateY(0);
     }
+}
+
+.our-parties {
+    width: 100%;
+}
+
+.party-images {
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 a {
@@ -293,10 +306,6 @@ hr.hr--logo:after {
 
     .arrow {
         top: -70%;
-    }
-
-    .carousel {
-        padding: 0px;
     }
 
     .fullscreen-video-container {
