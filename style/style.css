@@ -1,6 +1,3 @@
-@import url(//db.onlinewebfonts.com/c/a53d51302c583acff4dc73b8aaa134dd?family=Arboria-Black);
-@import url(//db.onlinewebfonts.com/c/1c7f14203d028f1c6f8914508f469cb9?family=Arboria-Book);
-
 html {
     scroll-behavior: smooth;
 }
@@ -8,6 +5,19 @@ html {
 body {
     font-family: Arboria-Black, sans-serif;
 }
+
+@font-face {
+    font-family: 'Arboria-Black';
+    src: url('../fonts/Arboria-Black.woff2') format('woff2'),
+         url('../fonts/Arboria-Black.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Arboria-Book';
+    src: url('fonts/Arboria-Book.woff2') format('woff2'),
+         url('fonts/Arboria-Book.woff') format('woff');
+}
+
 
 .fullscreen-video-container {
     position: relative;
