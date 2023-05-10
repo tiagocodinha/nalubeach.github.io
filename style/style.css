@@ -60,6 +60,7 @@ body {
 
 .arrow-container {
     position: relative;
+    margin-top: -5%;
     height: 50px; /* set the height of the container to the height you want the arrow to move */
 }
 
@@ -258,6 +259,11 @@ hr.hr--logo:after {
 
 @media only screen and (min-width: 992px) {
   /* For desktop */
+    .arrow-container {
+        position: relative;
+        margin-top: -1%;
+        height: 50px; /* set the height of the container to the height you want the arrow to move */
+    }
 
     .button-container {
         position: absolute;
