@@ -105,7 +105,7 @@ h1 {
 }
 
 h2 {
-    color: #52c6d2;
+    color: #fff;
     font-size: 0.8em;
 }
 
@@ -116,7 +116,7 @@ h3 {
 }
 
 h4 {
-    color: #9f9f9f;
+    color: #fff;
     font-size: 0.5em;
 }
 
@@ -183,7 +183,7 @@ h5 {
 }
 
 .footer {
-    background-color: #f2f2f2;
+    background-color: #000;
     margin-bottom: 2%;
 }
 
@@ -219,12 +219,12 @@ h5 {
 }
 
 hr.hr--logo {
-  border-top: solid #000 1px;
+  border-top: solid #fff 1px;
   margin: 50px 0;
 }
 
 hr.hr--logo:after {
-    content: url("../images/logo\ footer-final-acho4-01.jpg");
+    content: url("../images/Logo_Branco1.png");
     /* Controls the position of the logo */
   left: 50%;
   position: absolute;
