@@ -42,9 +42,14 @@ body {
     color: white;
 }
 
-.navbar-light .navbar-toggler {
+.navbar-dark .navbar-toggler {
     outline: none;
 }
+
+.offcanvas-body {
+    background-color: black;
+}
+
 
 .button-container {
     position: absolute;
