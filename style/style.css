@@ -49,6 +49,13 @@ body {
 .offcanvas-body {
     background-color: black;
 }
+
+.offcanvas-header {
+    background-color: white;
+}
+
+
+
 .button-container {
     position: absolute;
     bottom: 60%;
