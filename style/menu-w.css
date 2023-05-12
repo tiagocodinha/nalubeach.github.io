@@ -3,11 +3,17 @@ html {
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Arboria-Black', sans-serif;
     color: #fff;
 
-    background: #52c6d2;
+    background: #000;
 
+}
+
+@font-face {
+    font-family: 'Arboria-Black';
+    src: url('../fonts/Arboria-Black.woff2') format('woff2'),
+         url('../fonts/Arboria-Black.woff') format('woff');
 }
 
 .menu-title{

@@ -42,7 +42,7 @@ body {
     color: white;
 }
 
-.navbar-dark .navbar-toggler {
+.navbar-toggler .navbar-toggler-icon {
     outline: none;
 }
 
