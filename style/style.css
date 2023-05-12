@@ -54,8 +54,6 @@ body {
     background-color: white;
 }
 
-
-
 .button-container {
     position: absolute;
     bottom: 60%;
@@ -112,10 +110,8 @@ body {
     margin: 0%;
 }
 
-
 a {
     text-decoration: none;
-
 }
 
 h1 {
@@ -167,10 +163,6 @@ h5 {
 
 .img-logo {
     width: 40%;
-}
-
-.home-images {
-    width: 100%;
 }
 
 .btn-primary {
@@ -264,22 +256,12 @@ hr.hr--logo:after {
     padding: 0px;
     position: relative;
 }
-.bottom-left {
-    position: absolute;
-    bottom: 18%;
-    left: 9%;
-  }
-  .bottom-left-offset {
-    position: absolute;
-    bottom: 18.5%;
-    left: 9.5%;
-  }
 
 @media only screen and (min-width: 992px) {
   /* For desktop */
     .arrow-container {
         position: relative;
-        margin-top: -1%;
+        margin-top: 0.5%;
         height: 50px; /* set the height of the container to the height you want the arrow to move */
     }
 
@@ -293,14 +275,7 @@ hr.hr--logo:after {
     .navbar-brand {
         width: 25%;
     }
-    .bottom-left {
-        position: absolute;
-        bottom: 18%;
-        left: 9%;
-    }
-    .home-images {
-        width: 100%;
-    }   
+
     .col {
         padding: 0px;
         position: relative;
