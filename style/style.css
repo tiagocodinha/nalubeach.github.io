@@ -261,7 +261,7 @@ hr.hr--logo:after {
   /* For desktop */
     .arrow-container {
         position: relative;
-        margin-top: 0.5%;
+        margin-top: 1%;
         height: 50px; /* set the height of the container to the height you want the arrow to move */
     }
 
