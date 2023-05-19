@@ -46,6 +46,10 @@ body {
     outline: none;
 }
 
+.navbar-scrolled {
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity value */
+}
+
 .offcanvas-body {
     background-color: black;
 }
@@ -151,20 +155,18 @@ h4 {
     color: #000;
 }
 
-
-
 .overlay h4{
     font-family: Arboria-Book, sans-serif;
     color: white;
     font-size: 1em;
-
+    font-weight: 700;
 }
 
 .overlay h5{
     font-family: Arboria-Book, sans-serif;
     color: white;
     font-size: 1em;
-
+    font-weight: 700;
 }
 
 .image-container {
