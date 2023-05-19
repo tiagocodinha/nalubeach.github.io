@@ -124,21 +124,22 @@ h2 {
     font-size: 0.8em;
 }
 
+h4 {
+    color: #fff;
+}
+
 .overlay h3 {
     color: #fff;
-    font-family: Arboria-Book, sans-serif;
 
 }
 
 .overlay h4 {
     color: #fff;
     font-size: 0.5em;
-    font-family: Arboria-Book, sans-serif;
 }
 
 .overlay h5 {
     color: #fff;
-    font-family: Arboria-Book, sans-serif;
 
 }
 
@@ -159,6 +160,13 @@ h2 {
 
 }
 
+.overlay h5{
+    font-family: Arboria-Book, sans-serif;
+    color: white;
+    font-size: 1em;
+
+}
+
 .image-container {
     position: relative;
 }
@@ -170,9 +178,9 @@ h2 {
 .btn-primary {
     padding-right: 10%;
     padding-left: 10%;
-    background-color: white;
+    background-color: #2bb3c3;
     border: none;
-    color: black;
+    color: white;
 }
 
 .btn-primary:hover {
@@ -257,6 +265,10 @@ hr.hr--logo:after {
 .col {
     padding: 0px;
     position: relative;
+}
+
+.contacts-col .h4 {
+    color: #fff;
 }
 
 @media only screen and (min-width: 992px) {
