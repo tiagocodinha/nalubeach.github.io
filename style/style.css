@@ -34,6 +34,10 @@ body {
     object-fit: cover;
 }
 
+.navbar {
+    transition: background-color 0.5s ease-in-out; /* Adjust the duration */
+}
+
 .navbar-brand {
     width: 35%;
 }
