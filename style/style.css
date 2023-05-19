@@ -130,6 +130,7 @@ h2 {
 
 h4 {
     color: #fff;
+    font-size: 0.5em;
 }
 
 .overlay h3 {
@@ -269,9 +270,9 @@ hr.hr--logo:after {
     position: relative;
 }
 
-.contacts-col .h4 {
+/* .contacts-col .h4 {
     color: #fff;
-}
+} */
 
 @media only screen and (min-width: 992px) {
   /* For desktop */
