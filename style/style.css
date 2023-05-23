@@ -51,7 +51,7 @@ body {
 }
 
 .navbar-scrolled {
-    background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity value */
+    background-color: rgba(0, 0, 0, 0.4); /* Adjust the opacity value */
 }
 
 .offcanvas-body {
@@ -129,12 +129,12 @@ h1 {
 
 h2 {
     color: #fff;
-    font-size: 0.8em;
+    font-size: 0.9em;
 }
 
 h4 {
     color: #fff;
-    font-size: 0.5em;
+    font-size: 0.6em;
 }
 
 .overlay h3 {
@@ -200,19 +200,10 @@ h4 {
     padding: 0;
 }
 
-.logo-container {
-    background: linear-gradient(0deg, rgba(82,198,210,1) 0%, rgba(102,206,216,1) 100%);
-    padding: 0px;
-}
-
 .text {
     text-align: center;
 }
 
-.footer {
-    background-color: #000;
-    margin-bottom: 2%;
-}
 
 .row-icons {
     display: block;
@@ -227,7 +218,7 @@ h4 {
 }
 
 .social-logos:hover {
-  transform: scale(1.5);
+    transform: scale(1.5);
 }
 
 .social-l {
@@ -238,27 +229,35 @@ h4 {
 }
 
 .social-l:hover {
-  transform: scale(1.5);
+    transform: scale(1.5);
 }
 
 .img-svg {
     width: 10%;
 }
 
-hr.hr--logo {
-  border-top: solid #fff 1px;
-  margin: 50px 0;
-}
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px; /* Adjust the margin as needed */
+  }
+  
+  .line {
+    flex-grow: 1;
+    border: none;
+    border-top: 2px solid white;
+    margin: 0 10px; /* Adjust the margin as needed */
+  }
+  
+  .logo-container img {
+    max-width: 100%;
+    height: auto;
+  }
 
-hr.hr--logo:after {
-    content: url("../images/Logo_Branco1.png");
-    /* Controls the position of the logo */
-  left: 50%;
-  position: absolute;
-  transform: translateY(-50%) translateX(-50%);
-  /* Controls the whitespace around the symbol */
-  padding: 20px;
-}
+  .footer-logo {
+    width: 25%;
+  }
 
 .livro {
     width: 5em;
@@ -272,6 +271,11 @@ hr.hr--logo:after {
 .col {
     padding: 0px;
     position: relative;
+}
+
+.footer {
+    background-color: #2bb3c3;
+    margin-bottom: 2%;
 }
 
 /* .contacts-col .h4 {
@@ -343,6 +347,9 @@ hr.hr--logo:after {
         font-size: 2rem;
         padding: 0.7rem 2rem;
     }
-    
+
+    .footer-logo {
+        width: 10%;
+    }
 }
 
