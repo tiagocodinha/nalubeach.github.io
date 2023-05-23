@@ -6,7 +6,8 @@ body {
     font-family: 'Arboria-Black', sans-serif;
     color: #fff;
 
-    background: #000;
+    /* background: #000; */
+    background: linear-gradient(0deg, rgba(82,198,210,1) 0%, rgba(0,0,20,1) 100%);
 
 }
 
