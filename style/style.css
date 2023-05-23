@@ -4,6 +4,7 @@ html {
 
 body {
     font-family: Arboria-Black, sans-serif;
+    background: linear-gradient(0deg, rgba(82,198,210,1) 0%, rgba(0,0,20,1) 100%);
 }
 
 @font-face {
@@ -17,7 +18,6 @@ body {
     src: url('fonts/Arboria-Book.woff2') format('woff2'),
          url('fonts/Arboria-Book.woff') format('woff');
 }
-
 
 .fullscreen-video-container {
     position: relative;
@@ -43,7 +43,7 @@ body {
 }
 
 .navbar-nav .nav-item .nav-link{
-    color: white;
+    color: white !important;
 }
 
 .navbar-toggler .navbar-toggler-icon {
@@ -52,6 +52,10 @@ body {
 
 .navbar-scrolled {
     background-color: rgba(0, 0, 0, 0.4); /* Adjust the opacity value */
+}
+
+.our-parties {
+    color: #fff;
 }
 
 .offcanvas-body {
@@ -275,7 +279,7 @@ h4 {
 }
 
 .footer {
-    background-color: #2bb3c3;
+    /* background-color: #2bb3c3; */
     margin-bottom: 2%;
 }
 
