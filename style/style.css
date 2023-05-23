@@ -129,12 +129,13 @@ h1 {
 
 h2 {
     color: #fff;
-    font-size: 0.9em;
+    font-size: 1.0em;
 }
 
 h4 {
     color: #fff;
-    font-size: 0.6em;
+    font-size: 0.70em;
+    font-weight: 200;
 }
 
 .overlay h3 {
@@ -311,11 +312,11 @@ h4 {
     }
 
     h2 {
-        font-size: 1.2em;
+        font-size: 1.4em;
     }
 
     h4 {
-        font-size: 0.8em;
+        font-size: 1em;
     }
 
     .images-container {
