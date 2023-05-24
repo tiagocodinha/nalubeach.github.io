@@ -121,10 +121,9 @@ body {
     padding-left: 0%;
     padding-right: 0%;
 }
-/* Custom spacing for the party photos */
-.px-5 {
-    padding-left: ($spacer * 1) !important;
-    padding-right: ($spacer * 1) !important;
+
+.img-fluid {
+    width: 80%;
 }
 
 .event-images {
@@ -253,19 +252,19 @@ h4 {
     margin-top: 20px; /* Adjust the margin as needed */
   }
   
-  .line {
+.line {
     flex-grow: 1;
     border: none;
     border-top: 2px solid white;
     margin: 0 10px; /* Adjust the margin as needed */
   }
   
-  .logo-container img {
+.logo-container img {
     max-width: 100%;
     height: auto;
   }
 
-  .footer-logo {
+.footer-logo {
     width: 25%;
   }
 
@@ -287,10 +286,6 @@ h4 {
     /* background-color: #2bb3c3; */
     margin-bottom: 2%;
 }
-
-/* .contacts-col .h4 {
-    color: #fff;
-} */
 
 @media only screen and (min-width: 992px) {
   /* For desktop */
