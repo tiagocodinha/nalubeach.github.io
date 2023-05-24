@@ -72,7 +72,7 @@ body {
 
 .button-container {
     position: absolute;
-    bottom: 12%;
+    bottom: 15%;
     left: 50%;
     transform: translate(-50%, 50%);
 }
@@ -291,7 +291,7 @@ h4 {
   /* For desktop */
     .arrow-container {
         position: relative;
-        margin-top: 1.45%;
+        margin-top: 0%;
         height: 50px; /* set the height of the container to the height you want the arrow to move */
     }
 
@@ -300,8 +300,8 @@ h4 {
         bottom: 55%;
         left: 50%;
         transform: translate(-50%, 50%);
+        margin-bottom: 2%;
     }
-
     .navbar-brand {
         width: 25%;
     }
@@ -351,7 +351,7 @@ h4 {
 
     .button-container button {
         font-size: 2rem;
-        padding: 0.7rem 2rem;
+        padding: 0.5rem 1.5rem;
     }
 
     .footer-logo {
