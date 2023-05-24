@@ -15,13 +15,13 @@ body {
 
 @font-face {
     font-family: 'Arboria-Book';
-    src: url('fonts/Arboria-Book.woff2') format('woff2'),
-         url('fonts/Arboria-Book.woff') format('woff');
+    src: url('../fonts/Arboria-Book.woff2') format('woff2'),
+         url('../fonts/Arboria-Book.woff') format('woff');
 }
 
 .fullscreen-video-container {
     position: relative;
-    height: 50vh;
+    height: 100vh;
     width: 100%;
 }
 
@@ -72,7 +72,7 @@ body {
 
 .button-container {
     position: absolute;
-    bottom: 60%;
+    bottom: 12%;
     left: 50%;
     transform: translate(-50%, 50%);
 }
@@ -120,6 +120,11 @@ body {
 .party-images {
     padding-left: 0%;
     padding-right: 0%;
+}
+/* Custom spacing for the party photos */
+.px-5 {
+    padding-left: ($spacer * 1) !important;
+    padding-right: ($spacer * 1) !important;
 }
 
 .event-images {
