@@ -321,7 +321,7 @@ event-images {
   /* For desktop */
     .arrow-container {
         position: relative;
-        margin-top: -3%;
+        margin-top: -5%;
         height: 50px; /* set the height of the container to the height you want the arrow to move */
     }
 
