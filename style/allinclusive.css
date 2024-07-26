@@ -95,7 +95,18 @@ html {
   .icons-allinclusive {
     width: 20%;
   }
-  
+
+  @media only screen and (max-width: 768px) {
+    .content-row {
+        flex-direction: column;
+    }
+    
+    .content-row .col {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
+
   @media only screen and (min-width: 1025px) {
     html {
         scroll-behavior: smooth;
