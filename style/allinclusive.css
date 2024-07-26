@@ -96,7 +96,7 @@ html {
     width: 20%;
   }
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1024px) {
     .content-row {
         flex-direction: column;
     }
