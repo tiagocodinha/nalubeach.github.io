@@ -96,16 +96,14 @@ html {
     width: 20%;
   }
 
-  @media only screen and (max-width: 1024px) {
-    .content-row {
-        flex-direction: column;
-    }
-    
+  .content-row {
+    flex-direction: column;
+}
+
     .content-row .col {
         width: 100%;
         margin-bottom: 15px;
     }
-}
 
   @media only screen and (min-width: 1025px) {
     html {
@@ -116,7 +114,13 @@ html {
       .menu-selector {
           width: 50%;
       }
-
+      .content-row {
+        flex-direction: row;
+    }
+      .content-row .col {
+        width: 30%;
+        margin-bottom: 15px;
+    }
       h2 {
         font-size: 2.0rem !important;
         font-weight: 900;
