@@ -148,19 +148,11 @@
             </div>
         </a>
     </div>
-
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-
-
-    <style>
+    
+<style>
         /* Estilo da seção da newsletter */
         .newsletter-section {
-          padding: 70px 20px;
+          padding: 100px 20px;
           background-color: #ffffff;
           display: flex;
           justify-content: center;
@@ -169,7 +161,7 @@
     
         .newsletter-container {
           display: grid;
-          grid-template-columns: repeat(3, 1fr); /* Três colunas iguais */
+          grid-template-columns: repeat(2, 1fr); /* Três colunas iguais */
           gap: 20px;
           align-items: center;
           width: 100%;
@@ -196,20 +188,7 @@
           margin: 5px 0 0 0;
           color: #242424;
         }
-    
-        /* Coluna 2 (Campo de email) */
-        #newsletter-form input {
-          border: none;
-          border-bottom: 2px solid #333;
-          padding: 10px;
-          font-size: 1em;
-          outline: none;
-          width: 100%;
-          max-width: 300px;
-          box-sizing: border-box;
-          text-align: center;
-        }
-    
+
         /* Coluna 3 (Botão de subscrever) */
         .newsletter-btn {
           padding: 12px 25px;
@@ -248,33 +227,7 @@
             width: 100%;
           }
     
-          /* Garantir que a política de privacidade ocupe toda a largura e fique centralizada */
-          .privacy-policy {
-            margin-top: 20px;
-            font-size: 0.8em;
-            color: #777;
-            text-align: center; /* Centraliza o texto */
-            grid-column: span 1; /* Ajusta a política de privacidade para se ajustar à coluna única */
-          }
-        }
-
-        /* Estilo do texto com link da política de privacidade dentro da seção */
-        .privacy-policy {
-          margin-top: 20px;
-          font-size: 0.8em;
-          color: #777;
-          grid-column: span 3; /* Faz o texto ocupar toda a largura em telas maiores */
-          text-align: center; /* Centraliza o texto dentro da área */
-        }
-
-        .privacy-policy a {
-          color: #007BFF;
-          text-decoration: none;
-        }
-
-        .privacy-policy a:hover {
-          text-decoration: underline;
-        }
+         
       </style>
     </head>
     <body>
@@ -287,66 +240,12 @@
           </div>
           <!-- Coluna 2 -->
           <div class="newsletter-column">
-            <form id="newsletter-form">
-              <input
-                type="email"
-                name="email"
-                placeholder="Insira o seu email"
-                required
-              />
-            </form>
-          </div>
-          <!-- Coluna 3 -->
-          <div class="newsletter-column">
             <button type="submit" form="newsletter-form" class="newsletter-btn">
               SUBSCREVER
             </button>
           </div>
         </div>
-        
-        <!-- Frase sobre a Política de Privacidade dentro da seção -->
-        <div class="privacy-policy">
-          <p>Ao subscrever, está a concordar com a nossa <a href="https://www.nalubeachclub.com/pages/politica" target="_blank">Política de Privacidade</a>.</p>
-        </div>
       </section>
-
-      <script>
-        document.getElementById("newsletter-form").addEventListener("submit", function (event) {
-          event.preventDefault(); // Impede o comportamento padrão do formulário
-      
-          const email = event.target.email.value; // Captura o valor do email
-          const scriptURL = "https://script.google.com/macros/s/AKfycbxtUPV_1mC4B80Y4XYf98ppIOQIQqYiMG6-BiXLgBLFiylqGU7dZVqtMWmwYynDfJsh/exec"; // URL do seu Google Apps Script
-      
-          console.log('Enviando email:', email); // Log para depuração no frontend
-      
-          fetch(scriptURL, {
-            method: "POST", // Certifique-se de que é um POST
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ email: email }) // Envia o email como JSON
-          })
-            .then((response) => {
-              if (!response.ok) {
-                throw new Error("Erro na resposta do servidor.");
-              }
-              return response.json();
-            })
-            .then((data) => {
-              console.log('Resposta recebida:', data); // Log da resposta do servidor
-              if (data.status === "success") {
-                alert("E-mail salvo com sucesso!");
-              } else {
-                alert("Erro: " + data.message);
-              }
-            })
-            .catch((error) => {
-              console.error("Erro ao enviar o formulário:", error);
-              alert("Erro ao enviar o formulário. Verifique o console.");
-            });
-        });
-      </script>
-      
-        
-
     </body>
 </html>
 
