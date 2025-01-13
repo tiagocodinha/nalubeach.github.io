@@ -314,11 +314,12 @@
         function submitForm(event) {
           event.preventDefault(); // Impede o comportamento padrão de envio do formulário
       
-          var email = document.getElementById('email').value; // Obtém o email do campo de entrada
+          // Obtém o e-mail do campo de entrada
+          var email = document.getElementById('email').value; 
           console.log('Email capturado: ', email); // Verifica no console o valor do email
       
           var formData = new FormData();
-          formData.append('email', email); // Adiciona o email ao FormData
+          formData.append('email', email); // Adiciona o e-mail ao FormData
       
           // Submete o formulário para o Google Apps Script usando a URL do Web App
           fetch('https://script.google.com/macros/s/AKfycbzqYzd6TDOw3haqVKLwC5Wx8Kt47DC8XSMxZtMkrHXdRTBV87JCrC2Nv0T1NT463mQ7/exec', {
@@ -327,7 +328,7 @@
           })
           .then(response => response.text()) // Lê a resposta do servidor
           .then(data => {
-            console.log(data); // Verifica a resposta do servidor
+            console.log('Resposta do servidor:', data); // Verifica a resposta do servidor
             alert('SEE YOU SOON!');
             // Você pode adicionar mais ações aqui, como redirecionar ou limpar o formulário
           })
@@ -337,6 +338,7 @@
           });
         }
       </script>
+      
     </body>
 </html>
 
