@@ -312,35 +312,36 @@
 
       <script>
         document.getElementById("newsletter-form").addEventListener("submit", function (event) {
-  event.preventDefault();
-
-  const email = event.target.email.value; // Captura o email inserido
-  const scriptURL = "URL_DO_APPS_SCRIPT"; // Substitua pelo URL correto do Apps Script
-
-  fetch(scriptURL, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ email: email }), // Envia o email como JSON
-  })
-    .then((response) => {
-      if (!response.ok) {
-        throw new Error("Erro na resposta do servidor.");
-      }
-      return response.json();
-    })
-    .then((data) => {
-      if (data.status === "success") {
-        alert("E-mail salvo com sucesso!");
-      } else {
-        alert("Erro: " + data.message);
-      }
-    })
-    .catch((error) => {
-      console.error("Erro ao enviar o formulário:", error);
-      alert("Erro ao enviar o formulário. Verifique o console.");
-    });
-});
-      </script>  
+          event.preventDefault(); // Evita o comportamento padrão do formulário
+      
+          const email = event.target.email.value; // Captura o valor do email
+          const scriptURL = "https://script.google.com/macros/s/AKfycbxtUPV_1mC4B80Y4XYf98ppIOQIQqYiMG6-BiXLgBLFiylqGU7dZVqtMWmwYynDfJsh/exec";
+      
+          fetch(scriptURL, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ email: email }),
+          })
+            .then((response) => {
+              if (!response.ok) {
+                throw new Error("Erro na resposta do servidor.");
+              }
+              return response.json();
+            })
+            .then((data) => {
+              if (data.status === "success") {
+                alert("E-mail salvo com sucesso!");
+              } else {
+                alert("Erro: " + data.message);
+              }
+            })
+            .catch((error) => {
+              console.error("Erro ao enviar o formulário:", error);
+              alert("Erro ao enviar o formulário. Verifique o console.");
+            });
+        });
+      </script>
+        
 
     </body>
 </html>
