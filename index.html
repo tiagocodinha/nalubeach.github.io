@@ -312,29 +312,34 @@
 
       <script>
         document.getElementById("newsletter-form").addEventListener("submit", function (event) {
-          event.preventDefault();
-      
-          const email = event.target.email.value; // Captura o email
-          const scriptURL = "https://script.google.com/macros/s/AKfycbyh3DzvbcACbeYft8yitUnrCrW6VVs1zHZ6dL6_gIOG_HXVXik7D7KmH0gVBfVI7GqT/exec"; // Substitua pelo URL do Apps Script
-      
-          fetch(scriptURL, {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ email: email }), // Envia o email
-          })
-            .then((response) => response.json())
-            .then((data) => {
-              if (data.status === "success") {
-                alert("E-mail salvo com sucesso!");
-              } else {
-                alert("Erro: " + data.message);
-              }
-            })
-            .catch((error) => {
-              console.error("Erro ao enviar o formulário:", error);
-              alert("Erro ao enviar o formulário. Verifique o console.");
-            });
-        });
+  event.preventDefault();
+
+  const email = event.target.email.value; // Captura o email inserido
+  const scriptURL = "URL_DO_APPS_SCRIPT"; // Substitua pelo URL correto do Apps Script
+
+  fetch(scriptURL, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ email: email }), // Envia o email como JSON
+  })
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("Erro na resposta do servidor.");
+      }
+      return response.json();
+    })
+    .then((data) => {
+      if (data.status === "success") {
+        alert("E-mail salvo com sucesso!");
+      } else {
+        alert("Erro: " + data.message);
+      }
+    })
+    .catch((error) => {
+      console.error("Erro ao enviar o formulário:", error);
+      alert("Erro ao enviar o formulário. Verifique o console.");
+    });
+});
       </script>  
 
     </body>
