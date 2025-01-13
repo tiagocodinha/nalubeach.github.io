@@ -311,34 +311,31 @@
       </section>
 
       <script>
-        function submitForm(event) {
-          event.preventDefault(); // Impede o comportamento padrão de envio do formulário
+        document.getElementById("newsletter-form").addEventListener("submit", function(event) {
+          event.preventDefault(); // Impede o envio padrão do formulário
       
-          // Obtém o e-mail do campo de entrada
-          var email = document.getElementById('email').value; 
-          console.log('Email capturado: ', email); // Verifica no console o valor do email
+          const email = event.target.email.value;
+          const scriptURL = "Chttps://script.google.com/macros/s/AKfycbyh3DzvbcACbeYft8yitUnrCrW6VVs1zHZ6dL6_gIOG_HXVXik7D7KmH0gVBfVI7GqT/exec"; // Substitua pelo URL do Apps Script
       
-          var formData = new FormData();
-          formData.append('email', email); // Adiciona o e-mail ao FormData
-      
-          // Submete o formulário para o Google Apps Script usando a URL do Web App
-          fetch('https://script.google.com/macros/s/AKfycbzqYzd6TDOw3haqVKLwC5Wx8Kt47DC8XSMxZtMkrHXdRTBV87JCrC2Nv0T1NT463mQ7/exec', {
-            method: 'POST',
-            body: formData
+          fetch(scriptURL, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ email }),
           })
-          .then(response => response.text()) // Lê a resposta do servidor
-          .then(data => {
-            console.log('Resposta do servidor:', data); // Verifica a resposta do servidor
-            alert('SEE YOU SOON!');
-            // Você pode adicionar mais ações aqui, como redirecionar ou limpar o formulário
-          })
-          .catch(error => {
-            alert('Erro ao enviar dados. Tente novamente.');
-            console.error(error);
-          });
-        }
-      </script>
-      
+            .then((response) => response.json())
+            .then((data) => {
+              if (data.status === "success") {
+                alert("E-mail salvo com sucesso!");
+              } else {
+                alert("Erro: " + data.message);
+              }
+            })
+            .catch((error) => {
+              alert("Erro ao enviar o formulário: " + error.message);
+            });
+        });
+      </script>      
+
     </body>
 </html>
 
