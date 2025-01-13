@@ -114,6 +114,7 @@
             </div>
           </div>
           
+        
           <div class="collapse navbar-collapse justify-content-end d-lg-flex mt-3" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
@@ -147,6 +148,201 @@
             </div>
         </a>
     </div>
+
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+
+
+    <style>
+        /* Estilo da seção da newsletter */
+        .newsletter-section {
+          padding: 70px 20px;
+          background-color: #ffffff;
+          display: flex;
+          justify-content: center;
+          flex-direction: column; /* Organiza os itens verticalmente */
+        }
+    
+        .newsletter-container {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr); /* Três colunas iguais */
+          gap: 20px;
+          align-items: center;
+          width: 100%;
+          max-width: 1200px; /* Define uma largura máxima */
+          margin: 0 auto; /* Centraliza o container */
+        }
+    
+        .newsletter-column {
+          text-align: center; /* Centraliza o conteúdo de cada coluna */
+          font-family: Arial, sans-serif;
+          color: #555;
+        }
+    
+        /* Coluna 1 (Título e descrição) */
+        .newsletter-title h3 {
+          font-size: 1.5em;
+          font-weight: bold;
+          margin: 0;
+          color: #333;
+        }
+    
+        .newsletter-title p {
+          font-size: 0.9em;
+          margin: 5px 0 0 0;
+          color: #242424;
+        }
+    
+        /* Coluna 2 (Campo de email) */
+        #newsletter-form input {
+          border: none;
+          border-bottom: 2px solid #333;
+          padding: 10px;
+          font-size: 1em;
+          outline: none;
+          width: 100%;
+          max-width: 300px;
+          box-sizing: border-box;
+          text-align: center;
+        }
+    
+        /* Coluna 3 (Botão de subscrever) */
+        .newsletter-btn {
+          padding: 12px 25px;
+          background-color: rgba(82,198,210,1);
+          color: #fff;
+          border: none;
+          border-radius: 25px;
+          font-size: 1em;
+          font-weight: bold;
+          cursor: pointer;
+          text-transform: uppercase;
+          transition: background-color 0.3s, transform 0.2s;
+        }
+    
+        .newsletter-btn:hover {
+          background-color: #000000;
+          transform: scale(1.05);
+        }
+    
+        /* Responsividade */
+        @media (max-width: 768px) {
+          .newsletter-container {
+            grid-template-columns: 1fr; /* Uma única coluna em dispositivos pequenos */
+            gap: 15px;
+          }
+    
+          .newsletter-column {
+            text-align: center;
+          }
+    
+          #newsletter-form input {
+            max-width: 100%;
+          }
+    
+          .newsletter-btn {
+            width: 100%;
+          }
+    
+          /* Garantir que a política de privacidade ocupe toda a largura e fique centralizada */
+          .privacy-policy {
+            margin-top: 20px;
+            font-size: 0.8em;
+            color: #777;
+            text-align: center; /* Centraliza o texto */
+            grid-column: span 1; /* Ajusta a política de privacidade para se ajustar à coluna única */
+          }
+        }
+
+        /* Estilo do texto com link da política de privacidade dentro da seção */
+        .privacy-policy {
+          margin-top: 20px;
+          font-size: 0.8em;
+          color: #777;
+          grid-column: span 3; /* Faz o texto ocupar toda a largura em telas maiores */
+          text-align: center; /* Centraliza o texto dentro da área */
+        }
+
+        .privacy-policy a {
+          color: #007BFF;
+          text-decoration: none;
+        }
+
+        .privacy-policy a:hover {
+          text-decoration: underline;
+        }
+      </style>
+    </head>
+    <body>
+      <section class="newsletter-section">
+        <div class="newsletter-container">
+          <!-- Coluna 1 -->
+          <div class="newsletter-column newsletter-title">
+            <h3>WE'RE ALMOST BACK!</h3>
+            <p>Subscribe to our newsletter and be the first to hear about our reopening.</p>
+          </div>
+          <!-- Coluna 2 -->
+          <div class="newsletter-column">
+            <form id="newsletter-form">
+              <input
+                type="email"
+                name="email"
+                placeholder="Insira o seu email"
+                required
+              />
+            </form>
+          </div>
+          <!-- Coluna 3 -->
+          <div class="newsletter-column">
+            <button type="submit" form="newsletter-form" class="newsletter-btn">
+              SUBSCREVER
+            </button>
+          </div>
+        </div>
+        
+        <!-- Frase sobre a Política de Privacidade dentro da seção -->
+        <div class="privacy-policy">
+          <p>Ao subscrever, está a concordar com a nossa <a href="https://www.nalubeachclub.com/pages/politica" target="_blank">Política de Privacidade</a>.</p>
+        </div>
+      </section>
+
+      <script>
+        function submitForm(event) {
+          event.preventDefault(); // Impede o comportamento padrão de envio do formulário
+          
+          var email = document.getElementById('email').value; // Obtém o email do campo de entrada
+  
+          var formData = new FormData();
+          formData.append('email', email); // Adiciona o email ao FormData
+  
+          // Submete o formulário para o Google Apps Script usando a URL do Web App
+          fetch('https://script.google.com/macros/s/AKfycbzqYzd6TDOw3haqVKLwC5Wx8Kt47DC8XSMxZtMkrHXdRTBV87JCrC2Nv0T1NT463mQ7/exec', {
+            method: 'POST',
+            body: formData
+          })
+          .then(response => response.text()) // Lê a resposta do servidor
+          .then(data => {
+            alert('SEE YOU SOON!');
+            // Você pode adicionar mais ações aqui, como redirecionar ou limpar o formulário
+          })
+          .catch(error => {
+            alert('Erro ao enviar dados. Tente novamente.');
+            console.error(error);
+          });
+        }
+      </script>
+    </body>
+</html>
+
+      
+      
+    <br/>
+    <br/>
+
     <div class="text-center my-5" id="events">
         <h1 class="our-parties">OUR PARTIES</h1>
     </div>
