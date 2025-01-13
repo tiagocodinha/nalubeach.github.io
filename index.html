@@ -311,16 +311,16 @@
       </section>
 
       <script>
-        document.getElementById("newsletter-form").addEventListener("submit", function(event) {
-          event.preventDefault(); // Impede o envio padrão do formulário
+        document.getElementById("newsletter-form").addEventListener("submit", function (event) {
+          event.preventDefault();
       
-          const email = event.target.email.value;
+          const email = event.target.email.value; // Captura o email
           const scriptURL = "https://script.google.com/macros/s/AKfycbyh3DzvbcACbeYft8yitUnrCrW6VVs1zHZ6dL6_gIOG_HXVXik7D7KmH0gVBfVI7GqT/exec"; // Substitua pelo URL do Apps Script
       
           fetch(scriptURL, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ email }),
+            body: JSON.stringify({ email: email }), // Envia o email
           })
             .then((response) => response.json())
             .then((data) => {
@@ -331,10 +331,11 @@
               }
             })
             .catch((error) => {
-              alert("Erro ao enviar o formulário: " + error.message);
+              console.error("Erro ao enviar o formulário:", error);
+              alert("Erro ao enviar o formulário. Verifique o console.");
             });
         });
-      </script>      
+      </script>  
 
     </body>
 </html>
