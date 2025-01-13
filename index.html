@@ -312,15 +312,17 @@
 
       <script>
         document.getElementById("newsletter-form").addEventListener("submit", function (event) {
-          event.preventDefault(); // Evita o comportamento padrão do formulário
+          event.preventDefault(); // Impede o comportamento padrão do formulário
       
           const email = event.target.email.value; // Captura o valor do email
-          const scriptURL = "https://script.google.com/macros/s/AKfycbxtUPV_1mC4B80Y4XYf98ppIOQIQqYiMG6-BiXLgBLFiylqGU7dZVqtMWmwYynDfJsh/exec";
+          const scriptURL = "https://script.google.com/macros/s/AKfycbxtUPV_1mC4B80Y4XYf98ppIOQIQqYiMG6-BiXLgBLFiylqGU7dZVqtMWmwYynDfJsh/exec"; // URL do seu Google Apps Script
+      
+          console.log('Enviando email:', email); // Log para depuração no frontend
       
           fetch(scriptURL, {
-            method: "POST",
+            method: "POST", // Certifique-se de que é um POST
             headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ email: email }),
+            body: JSON.stringify({ email: email }) // Envia o email como JSON
           })
             .then((response) => {
               if (!response.ok) {
@@ -329,6 +331,7 @@
               return response.json();
             })
             .then((data) => {
+              console.log('Resposta recebida:', data); // Log da resposta do servidor
               if (data.status === "success") {
                 alert("E-mail salvo com sucesso!");
               } else {
@@ -341,6 +344,7 @@
             });
         });
       </script>
+      
         
 
     </body>
