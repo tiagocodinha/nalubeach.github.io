@@ -169,107 +169,103 @@
         </a>
     </div>
     
-<style>
-        /* Estilo da seção da newsletter */
-        .newsletter-section {
+
+    <style>
+      /* Estilo da seção da newsletter */
+      .newsletter-section {
           padding: 100px 20px;
           background-color: #ffffff;
           display: flex;
           justify-content: center;
           flex-direction: column; /* Organiza os itens verticalmente */
-        }
-    
-        .newsletter-container {
+      }
+  
+      .newsletter-container {
           display: grid;
-          grid-template-columns: repeat(2, 1fr); /* Três colunas iguais */
+          grid-template-columns: repeat(2, 1fr); /* Duas colunas iguais */
           gap: 20px;
           align-items: center;
           width: 100%;
           max-width: 1200px; /* Define uma largura máxima */
           margin: 0 auto; /* Centraliza o container */
-        }
-    
-        .newsletter-column {
+      }
+  
+      .newsletter-column {
           text-align: center; /* Centraliza o conteúdo de cada coluna */
           font-family: Arial, sans-serif;
           color: #555;
-        }
-    
-        /* Coluna 1 (Título e descrição) */
-        .newsletter-title h3 {
+      }
+  
+      /* Coluna 1 (Título e descrição) */
+      .newsletter-title h3 {
           font-size: 1.5em;
           font-weight: bold;
           margin: 0;
           color: #333;
-        }
-    
-        .newsletter-title p {
+      }
+  
+      .newsletter-title p {
           font-size: 0.9em;
           margin: 5px 0 0 0;
           color: #242424;
-        }
-
-        /* Coluna 3 (Botão de subscrever) */
-        .newsletter-btn {
-          padding: 12px 25px;
-          background-color: rgba(82,198,210,1);
+      }
+  
+      /* Botão de subscrever (usando <a>) */
+      .newsletter-btn {
+          display: inline-block;
+          padding: 15px 30px;
+          background-color: rgba(82, 198, 210, 1);
           color: #fff;
-          border: none;
           border-radius: 25px;
           font-size: 1em;
           font-weight: bold;
-          cursor: pointer;
           text-transform: uppercase;
-          transition: background-color 0.3s, transform 0.2s;
-        }
-    
-        .newsletter-btn:hover {
-          background-color: #000000;
-          transform: scale(1.05);
-        }
-    
-        /* Responsividade */
-        @media (max-width: 768px) {
+          text-decoration: none; /* Remove o sublinhado do link */
+          cursor: pointer;
+          transition: background-color 0.3s, transform 0.2s, color 0.3s;
+      }
+  
+      .newsletter-btn:hover {
+          background-color: #000000; /* Fundo preto */
+          color: rgba(82, 198, 210, 1); /* Texto no mesmo azul */
+          transform: scale(1.05); /* Leve aumento ao passar o mouse */
+      }
+  
+      /* Responsividade */
+      @media (max-width: 768px) {
           .newsletter-container {
-            grid-template-columns: 1fr; /* Uma única coluna em dispositivos pequenos */
-            gap: 15px;
+              grid-template-columns: 1fr; /* Uma única coluna em dispositivos pequenos */
+              gap: 15px;
           }
-    
+  
           .newsletter-column {
-            text-align: center;
+              text-align: center;
           }
-    
-          #newsletter-form input {
-            max-width: 100%;
-          }
-    
+  
           .newsletter-btn {
-            width: 100%;
+              width: 100%;
           }
-    
-         
-      </style>
-    </head>
-    <body>
+      }
+  </style>
+  </head>
+  <body>
       <section class="newsletter-section">
-        <div class="newsletter-container">
-          <!-- Coluna 1 -->
-          <div class="newsletter-column newsletter-title">
-            <h3>WE'RE ALMOST BACK!</h3>
-            <p>Subscribe to our newsletter and be the first to hear about our reopening.</p>
+          <div class="newsletter-container">
+              <!-- Coluna 1 -->
+              <div class="newsletter-column newsletter-title">
+                  <h3>WE'RE ALMOST BACK!</h3>
+                  <p>Subscribe to our newsletter and be the first to hear about our reopening.</p>
+              </div>
+              <!-- Coluna 2 -->
+              <div class="newsletter-column">
+                  <a href="https://mailchi.mp/abeda488eee9/nalu" target="_blank" class="newsletter-btn">
+                      SUBSCRIBE
+                  </a>
+              </div>
           </div>
-          <!-- Coluna 2 -->
-          <div class="newsletter-column">
-            <button type="submit" form="newsletter-form" class="newsletter-btn">
-              <a href="https://mailchi.mp/abeda488eee9/nalu" target="_blank" class="newsletter-btn">
-                    SUBSCRIBE
-                </a>
-            </button>
-          </div>
-        </div>
       </section>
-    </body>
-</html>
+  </body>
+  
 
       
       
